@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departement Informatique</title>
+    <link rel="stylesheet" href="./orientation.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="../ImageHome/logo.png" alt="">
+            <div class="text1">
+                <h2>ALGIERS UNIVERSITY</h2>
+                <p>DÉPARTEMENT INFORMATIQUE</p>
+            </div>
+            </div>
+            <div class="header-center" id="header-center">
+                <nav>
+                    <a href="../HOME/home.html"  >Home</a>
+                    <a href="../EMPLOI DU TEMP/emploi.html" >Schedules</a>
+                    <a href="../TEACHERS/teach.html" >Teachers</a>
+                    <a href="../STUDENTS/students.html" >Students</a>
+                    <a href="./orientation.html" class="active">Orientation</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <a href="../INSCRIPTION/inscription.html" class="a">Inscription</a>
+                <a href="../CLAIM/claim.html" class="btn1">Make a Claim</a>
+            </div>
+        </header>
+        <div class="main">
+            <div class="text">
+                <h2>Orientations</h2>
+                <p>Academic year 2023/2024</p>
+            </div>
+            
+            <div class="main-bottom">
+                <div  class="button-container">
+                    <div class="button" onclick="document.getElementById('orientation').style.display='block'">
+                        <div class="container">
+                            <div class="image-wrapper">
+                                <img src="./signpost.svg" class="image" style="width: 20px; border-radius: 5px;" alt="Signpost">
+                            </div>
+                            
+ 
+                            <span>To 3rd year (ISIL-SI) </span> 
+                            <img class="to-right" src="./Stroke 1.png">
+                        </div>
+                        
+                    </div>
+                    <div class="button" onclick="document.getElementById('orientation').style.display='block'">
+                        <div class="container">
+                            <div class="image-wrapper">
+                                <img src="./signpost.svg" class="image" style="width: 20px; border-radius: 5px;" alt="Signpost">
+                            </div>
+                            <span>To Master 1 (SI-RSD-GLAA-SIAA) </span> 
+                            <img class="to-right" src="./Stroke 1.png">
+                        </div>
+                    </div>
+                    <div class="button" onclick="document.getElementById('orientation').style.display='block'">
+                        <div class="container">
+                            <div class="image-wrapper">
+                                <img src="./signpost.svg" class="image" style="width: 20px; border-radius: 5px;" alt="Signpost">
+                            </div>
+                            <span>Recours Orientations vers Master 1  </span> 
+                            <img class="to-right" src="./Stroke 1.png">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="orientation-section" id="orientation">
+            <div class="orientation-container">
+                <div class="container-top">
+                    <img src="./Arrow - Left.png" onclick="document.getElementById('orientation').style.display='none'">
+                </div>
+                <div class="container-bottom">
+                    <img src="./signpost.svg">
+                    <button>To 3rd year (ISIL-SI)</button>
+                    <p>Please choose your speciality of the 3rd year(ISIL-SI)</p>
+                    <div class="input-container">
+                        <img src="./Profile.png">
+                        <input  type="text" placeholder="Full Name" >
+                    </div>
+                    <div class="input-container">
+                        <img src="./3 User.png">
+                        <select name="group" >
+                            <option value="grp 1">Grp 1</option>
+                            <option value="grp 2">Grp 2</option>
+                            <option value="grp 3">Grp 3</option>
+                            <option value="grp 4">Grp 4</option>
+                            <option value="grp 5">Grp 5</option>
+                        </select>
+                    </div> 
+                    <div class="input-container">
+                        <img src="./signpost.svg">
+                        <select name="Speciality requested" class="custom-select" >
+                            <option>SI</option>
+                            <option>ISIL</option>
+                        </select>
+                    </div> 
+                    <button class="btn1" type="submit" onclick="showValidation()">Validate your choice</button>
+
+                </div>
+
+                
+        
+            </div>
+            
+        </div>
+        <div class="validation-section" id="validation">
+            <div class="container2">
+                <div class="container-top2">
+                    <img src="./Arrow - Left.png" alt="" onclick="document.getElementById('validation').style.display='none'">
+                </div>
+                <div class="container-bottom2">
+                    <img src="./Vector (1).png" alt="">
+                    <button>To 3rd year (ISIL-SI)</button>
+                    <p>Your choice has been submitted Successfully</p>
+                    <a href="../HOME/home.html">Home Page</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="footer-maps">
+                <p>OUR LOCATION</p>
+                <img src="../ImageHome/image-map.svg" alt="">
+                <div class="footer-maps-link">
+                <img src="../ImageHome/logos_google-maps.svg" alt="">
+                <a href="https://maps.app.goo.gl/iNEMEFYrm2NZWpqd7">View on google maps</a>
+                </div>
+            
+            </div>
+            <div class="external-links">
+                <p style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">External Links</p> 
+                <p>Université Alger 1</p> 
+                <p>MESRS</p> 
+                <p>ERASMUS + </p> 
+                <p>SNDL</p> 
+                <p>PRFU</p> 
+            </div>
+            <div class="CONTACT">
+                <p  style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">Contact</p>
+                <p >Adresse: 02 Rue Didouche Mourad, Alger</p> 
+                <p>Mail: contact@univ-alger.dz</p> 
+                <p>Tél: +213 (0) 21 63 77 65 </p> 
+                <p>Fax: +213 (0) 21 63 78 64</p> 
+            
+            </div>
+            <div class="LANGAGE">
+                <p style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">Language</p> 
+                <p>English</p> 
+                <p>Arabic</p> 
+                <p>French</p> 
+            
+            </div>
+            <div class="TITLE">
+                <h2>ALGIERS UNIVERSITY</h2>
+                    <p>DÉPARTEMENT INFORMATIQUE</p>
+                    <img src="../ImageHome/Frame 7.png" alt="">
+            </div>
+            </div>
+
+
+        <script src="./orientation.js"></script>
+</body>
+</html>

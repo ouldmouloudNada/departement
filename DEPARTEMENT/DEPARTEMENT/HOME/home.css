@@ -1,0 +1,536 @@
+/* Importation de la police de Google Fonts "Poppins" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;   /* Définition de la police par défaut  */
+}
+
+header {
+     width: 100%;   /* largeur total de la page  */
+    height: auto; /*la hauteur du header s'ajuste automatiquement en fonction de son contenu */
+     display: flex; /* permettre d'organiser les element du header d'une maniere flexible */
+     justify-content: space-between; /*definit l'espace entre les element du header */
+     align-items: center; /* Centre les éléments du header verticalement  */
+     padding: 0 20px; /* 0 pout top et bottom 20px pour right et left */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+}
+
+.header-left {
+    width: 33.33%; /* Définit la largeur de l'élément à 33.33% de la largeur du conteneur parent (header) */
+     display: flex; /* permettre d'organiser les element fils d'une maniere flexible */
+    align-items: center;  /* Centre les éléments fils verticalement  */
+}
+ /* Stylise les images à l'intérieur de la classe .header-left */
+.header-left img {
+    width: 50px;   /* Définit la largeur des images à 50 px */
+    margin-right: 10px;  /* Ajoute une marge à droite de 10 px */
+    margin-left: 20px;   /* Ajoute une marge à gauche de 20 px */
+}
+/* Stylise le texte à l'intérieur de la classe .header-left */
+.header-left .text1 {
+     /* Définit l'affichage en colonne pour les éléments à l'intérieur */
+    display: flex;
+    flex-direction: column;
+}
+/* Stylise l'element h2 */
+.header-left .text1 h2 {
+     font-size: 14px;/* taille de police 14px */
+     letter-spacing: 0.5px;  /*espace entre le lettre  */
+    color: rgb(5, 38, 89);
+    margin: 0;
+}
+/* Stylise l'element p */
+.header-left .text1 p {
+    /* Définit la taille de la police, l'espacement des lettres et la couleur */
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: rgb(2, 16, 36);
+    /* Supprime les marges par défaut et ajoute une marge top de 3px */
+    margin: 0;
+    margin-top: 3px;
+}
+
+.header-center {
+    width: 33.33%;   /* Largeur égale à un tiers de la largeur totale */
+    margin-top: 20px;   /* Marge supérieure de 20 px */
+}
+
+
+
+.header-center nav {
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-between;  /* un espace egale entre les elements nav */
+    align-items: center; /* Centre les éléments fils verticalement  */
+    height: 100%; /* Hauteur égale à 100% de la hauteur du conteneur parent */
+}
+
+.header-center nav a {
+    text-decoration: none; /* Suppression du soulignement des liens */
+    color: rgb(5, 38, 89); /* Couleur du texte */
+    font-size: 13px; /* Taille de la police */
+    border-bottom: 4px solid transparent; /* Bordure base de 4px avec couleur transparente */
+    padding-bottom: 16px; /* Espacement sous le lien */
+    font-weight: 500; /* Poids de la police */
+}
+
+.header-center nav a:hover {
+    color: rgb(49, 170, 61); /* Changement de couleur du texte au survol */
+    border-bottom-color: rgb(49, 170, 61); /* Changement de couleur de la bordure basse au survol */
+    border-radius: 2.5px; /* Ajout de bord arrondi à la bordure basse */
+}
+.header-right {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments horizontalement */
+    justify-content: flex-end; /* Alignement des éléments à l'extrémité droite */
+    align-items: center; /* Alignement vertical au centre */
+}
+
+.header-right .a {
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    color: rgb(5, 38, 89); /* Couleur du texte */
+    font-size: 13px; /* Taille de la police */
+    font-weight: 500; /* poid de la police */
+    margin-right: 20px; /* Marge à droite */
+    padding: 10px 20px; /* 10px top et bottom et 20px right et left */
+}
+
+.header-right .a:hover {
+    background-color: rgb(230, 234, 239); /* Couleur de fond au survol */
+    padding: 10px 20px; /*padding top et bottom 10px et 20px right et left au survol */
+}
+
+.header-right .btn1 {
+    border: none; /* Pas de bordure */
+    border-radius: 0.5em; /* Bordures arrondies */
+    padding: 10px 25px; /* Remplissage */
+    background-color: rgb(5, 38, 89); /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    font-size: 13px; /* Taille de la police */
+    cursor: pointer; /* Curseur au survol */
+    font-weight: 500; /* Poids de la police */
+    text-decoration: none; /* Pas de soulignement */
+    margin-right: 25px; /* Marge à droite */
+}
+
+/* Style pour les liens actifs dans la barre de navigation */
+.header-center nav a.active {
+    color: rgb(49, 170, 61); /* Couleur du texte */
+    border-bottom-color: rgb(49, 170, 61); /* Couleur de la bordure inférieure */
+}
+
+
+
+/* Conteneur de l'image */
+.image-container {
+    position: relative; /* Position relative pour les éléments absolus enfants */
+    display: inline-block; /* Affichage en ligne avec bloc */
+}
+
+/* Pseudo-élément ::before pour créer un effet de superposition */
+.image-container::before {
+    content: ""; /* Contenu vide */
+    position: absolute; 
+    top: 0; /* Position en haut */
+    left: 0; /* Position à gauche */
+    width: 100%; /* Largeur de 100% */
+    height: 100%; /* Hauteur de 100% */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)); /* Dégradé linéaire de noir transparent à transparent */
+    background-size: cover; /* Taille de l'arrière-plan pour couvrir */
+    z-index: 1; /* Index z pour empiler sous l'image */
+}
+
+.image {
+    display: block; /* Affichage en bloc */
+    width: 100%; /* Largeur de 100% */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+    z-index: 2; /* Index z pour empiler au-dessus du pseudo-élément */
+}
+
+.text2 {
+    width: 100%; /* Largeur de 100% */
+    position: absolute; 
+    top: 30%; /* Position à 30% du haut */
+    left: 50%; /* Position à 50% de la gauche */
+    transform: translate(-50%, -50%); /* Translation pour centrer horizontalement et verticalement */
+    text-align: center; /* Alignement du texte au centre */
+    color: #ffffff; /* Couleur du texte */
+    z-index: 3; /* Index z pour empiler au-dessus des autres éléments */
+}
+
+
+.text2::after {
+    content: ''; /* Contenu vide */
+    display: block; /* Affichage en bloc */
+    width: 12%; /* Largeur de la ligne */
+    height: 2px; /* Hauteur de la ligne */
+    background-color: #C1E8FF; /* Couleur de la ligne */
+    position: absolute; /* Position absolue */
+    bottom: 0; /* Position au bas */
+    left: 50%; /* Position à 50% de la gauche */
+    transform: translateX(-50%); /* Translation pour centrer horizontalement */
+    z-index: 2; /* Index z pour empiler au-dessus du texte */
+}
+
+
+.text2 h2 {
+    font-size: 35px; /* Taille de police */
+    margin-bottom: 30px; /* Marge inférieure */
+    letter-spacing: 1px; /* Espacement des lettres */
+}
+
+/* Style du paragraphe */
+.text2 p {
+    font-size: 22px; /* Taille de police */
+    margin-bottom: 10px; /* Marge inférieure */
+}
+
+.image-container .list {
+    position: absolute; 
+    bottom: 80px; /* Position à 80px du bas */
+    left: 50%; /* Position à 50% de la gauche */
+    transform: translateX(-50%); /* Translation pour centrer horizontalement */
+    display: flex; /* Affichage en flex */
+    justify-content: space-between; /* espace entre les elements fils  */
+    align-items: center; /* Alignement des éléments  */
+    z-index: 1; /* Index z pour empiler au-dessus du texte */
+    width: 90%; /* Largeur de 90% */
+}
+
+
+.image-container .list .box {
+    height: 130px; /* Hauteur de chaque boîte */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 0.5rem; /* Bordures arrondies */
+    margin-right: 20px; /* Marge de droite */
+    box-shadow: 0px 0px 11px rgba(199.72, 216.85, 243.31, 0.50); /* Ombre portée */
+    display: flex; /* Affichage en flex */
+    flex-direction: column; /* Orientation des éléments en colonne  */
+}
+
+.box .box-top {
+    display: flex; /* Affichage en flex */
+    flex-direction: row; /* Orientation des éléments en row */
+    align-items: center; /* Alignement des éléments sur l'axe transversal */
+}
+
+/* Style du conteneur de l'icône */
+.box-top span {
+    background: linear-gradient(to bottom, rgba(203, 236, 255, 1), rgba(252, 185, 237, 1)); /* Dégradé linéaire */
+    padding: 7px; 
+    margin-left: 28px; /* Marge de gauche */
+    margin-top: 20px; /* Marge supérieure */
+    display: inline-block; /* Affichage en ligne avec bloc */
+    border-radius: 0.5rem; /* Bordures arrondies */
+}
+
+/* Style de l'icône */
+.box-top span img {
+    margin-left: 3px; /* Marge de gauche */
+    margin-top: 2px; /* Marge supérieure */
+}
+
+/* Style du texte */
+.box p {
+    font-size: 13px; /* Taille de police */
+    color: rgb(5, 38, 89); /* Couleur du texte */
+    font-weight: bold; /* poid de police */
+    margin-left: 10px; /* Marge de gauche */
+    margin-top: 20px; /* Marge supérieure */
+}
+
+/* Style du lien dans la partie inférieure de chaque boîte */
+.box-bottom a {
+    border: 1px solid #7DA0CA; /* Bordure */
+    color: #7DA0CA; /* Couleur du texte */
+    margin-left: 30px; /* Marge de gauche */
+    margin-right: 30px; /* Marge de droite */
+    display: inline-block; /* Affichage en ligne avec bloc */
+    margin-top: 20px; /* Marge supérieure */
+    padding: 8px 25px; /* Rembourrage */
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 11px; /* Taille de police */
+    border-radius: 0.3rem; /* Bordures arrondies */
+}
+
+/* Style du lien au survol */
+.box:hover .box-bottom a {
+    background-color: rgb(5, 38, 89); /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur pointeur */
+}
+
+/* Animation au survol */
+.box:hover {
+    animation-name: bounce; /* Nom de l'animation */
+    animation-duration: 0.8s; /* Durée de l'animation */
+    animation-timing-function: ease; /* Fonction de temporisation de l'animation */
+}
+
+/* Animation de rebond */
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* Translation de 0 */
+    }
+    50% {
+        transform: translateY(-10px); /* Translation vers le haut */
+    }
+    100% {
+        transform: translateY(0); /* Translation de retour */
+}
+}
+    /* Style de la section news */
+.news {
+    width: 100%; /* Largeur de 100% */
+    height: 50vh; 
+}
+
+/* Style du texte des nouvelles */
+.news-text {
+    width: 100%; /* Largeur de 100% */
+    font-size: 123px; /* Taille de police */
+    text-align: center; /* Alignement du texte au centre */
+    font-weight: bold; 
+    color: #F0F2F4; /* Couleur du texte */
+    letter-spacing: 3px; /* Espacement des lettres */
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+    line-height: 0.9; /* Hauteur de ligne */
+    margin-bottom: -40px; /* Marge inférieure */
+}
+
+/* Style du conteneur des nouvelles */
+.news-container {
+    width: 100%; /* Largeur de 100% */
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly; /* Répartition égale de l'espace entre les éléments */
+    align-items: center; /* Alignement des éléments sur l'axe transversal */
+    margin-top: -20px; /* Marge supérieure */
+}
+
+/* Style de chaque boîte de nouvelle */
+.box-news {
+    width: 370px; /* Largeur de la box  370px */
+    height: auto; /* Hauteur automatique */
+    background-color: #ffffff; /* Couleur de fond */
+    border-radius: 0.5em; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    margin-bottom: 40px; /* Marge inférieure */
+    padding: 20px; 
+}
+
+/* Style du paragraphe des nouvelles */
+.box-news p {
+    font-size: 12px; 
+    color: #6F7287; 
+    margin-bottom: 10px; 
+}
+
+/* Style du titre des nouvelles */
+.box-news h4 {
+    margin: 0; /* Pas de marge */
+    font-size: 16px; 
+    color: #000; 
+}
+
+/* Style du lien des nouvelles */
+.box-news a {
+    text-decoration: none; /* Pas de soulignement */
+    font-size: 10px; 
+    font-weight: bold; 
+    color: #052659; /* Couleur du texte */
+    display: inline-flex; /* Affichage en ligne avec bloc */
+    align-items: center; 
+}
+
+/* Style de l'icône des nouvelles */
+.box-news img {
+    width: 15px; /* Largeur de l'icône */
+    height: 15px; /* Hauteur de l'icône */
+    margin-right: 5px; /* Marge de droite */
+    vertical-align: middle; /* Alignement vertical au milieu */
+}
+
+/* Style de la pagination */
+.pagination {
+    width: 100%; /* Largeur de 100% */
+    height: 20vh; /* Hauteur de 20% de la hauteur de la vue */
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+/* Style du cercle de pagination */
+.cercle {
+    width: 25px; /* Largeur du cercle */
+    height: 25px; /* Hauteur du cercle */
+    border-radius: 50%; /* Bordure arrondie pour créer un cercle */
+    display: flex; /* Affichage en ligne */
+    align-items: center; /* Alignement vertical */
+    justify-content: center; /* Alignement horizontal */
+    background-color: #F0F2F4; /* Couleur de fond */
+}
+
+/* Style de la barre de pagination */
+.pagination-bar {
+    width: 20%; /* Largeur de la barre de pagination */
+    height: 28px; /* Hauteur de la barre de pagination */
+    background-color: #F0F2F4; /* Couleur de fond */
+    border-radius: 15px; /* Bordure arrondie */
+    display: flex; /* Affichage en ligne */
+    justify-content: space-around; /* Répartition égale de l'espace entre les éléments */
+    align-items: center; /* Alignement vertical */
+    margin-right: 5px; /* Marge de droite */
+    margin-left: 5px; /* Marge de gauche */
+}
+
+/* Style des numéros de page dans la barre de pagination */
+.pagination-bar span {
+    font-size: 10px; /* Taille de police */
+    color: #53749F; /* Couleur du texte */
+    margin: 0; /* Pas de marge */
+}
+
+/* Style du survol des numéros de page */
+.pagination-bar span:hover {
+    color: #052659; /* Couleur du texte au survol */
+    cursor: pointer; /* Curseur pointeur au survol */
+}
+
+/* Style du numéro de page actif */
+.pagination-bar .active {
+    background-color: #052659; /* Couleur de fond pour le cercle actif */
+    color: #fff; /* Couleur du texte actif */
+    border-radius: 50%; /* Bordure arrondie */
+    width: 25px; /* Largeur du cercle */
+    height: 25px; /* Hauteur du cercle */
+    display: flex; /* Affichage en ligne */
+    align-items: center; /* Alignement vertical */
+    justify-content: center; /* Alignement horizontal */
+    margin-right: -10px; /* Ajustement négatif de la marge droite */
+    margin-left: -10px; /* Ajustement négatif de la marge gauche */
+}
+
+/* Style du pied de page */
+.footer {
+    background-color: #021024; /* Couleur de fond */
+    width: 100%; /* Largeur de 100% */
+    padding-top: 30px; /* Réduire la hauteur du padding en haut */
+    padding-left: 40px; /* Réduire la largeur du padding à gauche */
+    padding-right: 60px; /* Réduire la largeur du padding à droite */
+    padding-bottom: 30px; /* Réduire la hauteur du padding en bas */
+    display: flex; /* Utiliser le modèle de boîte flexible */
+    justify-content: space-between; /* Aligner les éléments horizontalement */
+}
+
+/* Style de la section des cartes dans le pied de page */
+.footer-maps {
+    width: 15%; /* Réduire la largeur de la section de la carte */
+    display: flex; /* Utiliser le modèle de boîte flexible */
+    flex-direction: column; /* Aligner les éléments en colonne */
+    align-items: flex-start; /* Aligner les éléments à gauche */
+}
+
+/* Style des paragraphes dans la section des cartes */
+.footer-maps p {
+    color: #BCC6CE; /* Couleur du texte */
+    font-size: 12px; /* Taille de la police */
+    margin-bottom: 10px; /* Espacement en bas */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+}
+
+/* Style des images dans la section des cartes */
+.footer-maps img {
+    margin-top: 5px; /* Espacement en haut */
+    width: 100%; /* Largeur de l'image à 100% */
+    height: auto; /* Hauteur automatique pour garder les proportions */
+}
+
+/* Style des boutons dans la section des cartes */
+.footer-maps button {
+    border-radius: 10px; /* Bordure arrondie */
+    width: 20px; /* Largeur de 20px */
+}
+
+/* Style des liens dans la section des cartes */
+.footer-maps-link {
+    display: flex; /* Utiliser le modèle de boîte flexible */
+    align-items: center; /* Aligner les éléments verticalement */
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 15px; /* Bordure arrondie */
+    padding: 3px; /* Espacement intérieur */
+    margin-top: 10px; /* Espacement en haut */
+}
+
+/* Style des images dans les liens de la section des cartes */
+.footer-maps-link img {
+    width: 10px; /* Largeur de l'image */
+    margin-right: 5px; /* Espacement à droite */
+    margin-left: 5px; /* Espacement à gauche */
+}
+
+/* Style des liens dans les liens de la section des cartes */
+.footer-maps-link a {
+    font-size: 8px; /* Taille de la police */
+    color: #021024; /* Couleur du texte */
+    text-decoration: none; /* Pas de soulignement */
+    font-weight: bold; /* Gras */
+}
+
+/* Style des liens dans les liens de la section des cartes au survol */
+.footer-maps-link:hover {
+    background-color: #052659; /* Couleur de fond au survol */
+}
+
+/* Style des liens dans les liens de la section des cartes au survol */
+.footer-maps-link a:hover {
+    color: #fff; /* Couleur du texte au survol */
+}
+
+/* Style de la section des liens externes dans le pied de page */
+.external-links {
+    width: 15%; /* Réduire la largeur de la section des liens externes */
+    display: flex; /* Utiliser le modèle de boîte flexible */
+    flex-direction: column; /* Aligner les éléments en colonne */
+    align-items: flex-start; /* Aligner les éléments à gauche */
+}
+
+/* Style des paragraphes dans la section des liens externes */
+.external-links p, .CONTACT p, .LANGAGE p {
+    color: #fff; /* Couleur du texte */
+    font-size: 10px; /* Taille de la police */
+    margin-bottom: 5px; /* Espacement en bas */
+}
+
+/* Style de la section du titre dans le pied de page */
+.TITLE {
+    display: flex; /* Utiliser le modèle de boîte flexible */
+    align-items: center; /* Aligner les éléments verticalement */
+    margin-top: 30px; /* Espacement en haut */
+    flex-direction: column; /* Aligner les éléments en colonne */
+}
+
+/* Style du titre principal dans le pied de page */
+.TITLE h2 {
+    color: #fff; /* Couleur du texte */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    font-size: 25px; /* Taille de la police */
+}
+
+/* Style du sous-titre dans le pied de page */
+.TITLE p {
+    color: #53749F; /* Couleur du texte */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+}
+
+/* Style des images dans la section du titre dans le pied de page */
+.TITLE img {
+    width: 40px; /* Largeur de l'image */
+    margin-top: 10px; /* Espacement en haut */
+}
+
+

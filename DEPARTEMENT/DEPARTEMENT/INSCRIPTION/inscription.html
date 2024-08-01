@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departement informatique</title>
+    <link rel="stylesheet" href="./inscription.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="../ImageHome/logo.png" alt="">
+            <div class="text1">
+                <h2>ALGIERS UNIVERSITY</h2>
+                <p>DÉPARTEMENT INFORMATIQUE</p>
+            </div>
+            </div>
+            <div class="header-center" id="header-center">
+                <nav>
+                    <a href="../HOME/home.html"  >Home</a>
+                    <a href="../EMPLOI DU TEMP/emploi.html" >Schedules</a>
+                    <a href="../TEACHERS/teach.html">Teachers</a>
+                    <a href="../STUDENTS/students.html">Students</a>
+                    <a href="../ORIENTATION/orientation.html">Orientation</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <a href="./inscription.html" class="a">Inscription</a>
+                <a href="../CLAIM/claim.html" class="btn1">Make a Claim</a>
+            </div>
+        </header>
+    <div class="main">
+            <div class="main-top">
+<h3>Inscription</h3>
+<p>Veuillez remplir ce formulaire pour recevoir un mail de notification à chaque affichage</p>
+            </div>
+    
+    <div class="main-bottom">
+        <div class="main-bottom-left">
+            <div class="main-bottom-left-top">
+                <div class="main-bottom-left-left">
+                    <label for="">Full Name</label>
+                    <input type="text" placeholder="Please enter your full name.">
+                    <label for="">Email</label>
+                    <input type="text" name="" id="" placeholder="Please provide a valid email address">
+                    
+                </div>
+                <div class="main-bottom-left-right">
+                    <label for="">Student/Staff ID</label>
+                    <input type="text" placeholder="Please enter your identification number">
+                    <label for="">Phone Number</label>
+                    <input type="text" name="" id="" placeholder="Please provide a valid phone number">
+                </div>
+            </div>
+            <div class="bar">sélectionner les affichages qui vous intéressent</div>
+            <!-- PARTIE NADA -->
+                <div class="main-bottom-left-bottom">
+                    <div class="main-bottom-left-bottom-left" >
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1">
+                        <label class="mycheck1"for="check1">L1 licence</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1" for="check1">L3 SI</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1" for="check1">Master1_RSD</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1" for="check1">Master1_GLAA</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1"for="check1">Master1_IA</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1">
+                        <label class="mycheck1" for="check1">Master2_SI</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1" for="check1">Master2_SIAA</label>
+                    </div>
+                </div>
+                <div class="main-bottom-left-bottom-right" >
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1"for="check1">L2 licence </label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1"for="check1">L3 ISIL</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1"for="check1">Master1_SI</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1"for="check1">Master1_SIAA</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1"for="check1">Master1_RSD</label>
+                    </div>
+                    <div class="checkbox1" onclick="handleCheckboxClick(this)">
+                        <input type="checkbox" class="check1" >
+                        <label class="mycheck1"for="check1">Master2_GLAA</label>
+                    </div>
+                    
+                </div>
+                
+        </div>
+        <div class="button-container">
+            <button type="button" onclick="validateForm()">Submit</button>
+        </div>
+
+        </div>
+        <div class="main-bottom-right">
+            <div class="envelope-wrapper">
+                <img class="envelope-top" src="./Vector (1).png" alt="">
+                 <img src="./shadow.svg" alt="Shadow" class="envelope-shadow">
+                <img class="envelope-bottom" src="./Vector.png" alt="">
+                <img src="./Vector (2).png" alt="" class="image-below-envelope">
+                <img src="./Vector (2).png" alt="" class="image-below-envelope2">
+                <div class="center-image-wrapper">
+                    <img class="center-image" src="./Vectorwith.png" alt="" >
+                     <img class="border-image" src="./trait.png" alt="">
+                   <img src="./check.png" alt="" class="check-image">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+<div class="validation-section" id="validation">
+    <div class="container">
+        <div class="container-top">
+            <img src="../CLAIM/ImageClaim/Arrow - Left.svg" alt="" onclick="document.getElementById('validation').style.display='none'">
+        </div>
+        <div class="container-bottom">
+            <img src="../CLAIM/ImageClaim/fluent_checkmark-circle-16-regular.svg" alt="">
+            <button>Acadimic Issue</button>
+            <p>Thank you for taking the time to provide feedback</p>
+            <a href="../HOME/home.html">Home Page</a>
+            
+            
+        
+
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="footer-maps">
+        <p>OUR LOCATION</p>
+        <img src="../ImageHome/image-map.svg" alt="">
+        <div class="footer-maps-link">
+        <img src="../ImageHome/logos_google-maps.svg" alt="">
+        <a href="https://maps.app.goo.gl/iNEMEFYrm2NZWpqd7">View on google maps</a>
+        </div>
+    
+    </div>
+    <div class="external-links">
+        <p style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">External Links</p> 
+        <p>Université Alger 1</p> 
+        <p>MESRS</p> 
+        <p>ERASMUS + </p> 
+        <p>SNDL</p> 
+        <p>PRFU</p> 
+    </div>
+    <div class="CONTACT">
+        <p  style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">Contact</p>
+        <p >Adresse: 02 Rue Didouche Mourad, Alger</p> 
+        <p>Mail: contact@univ-alger.dz</p> 
+        <p>Tél: +213 (0) 21 63 77 65 </p> 
+        <p>Fax: +213 (0) 21 63 78 64</p> 
+    
+    </div>
+    <div class="LANGAGE">
+        <p style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">Language</p> 
+        <p>English</p> 
+        <p>Arabic</p> 
+        <p>French</p> 
+    
+    </div>
+    <div class="TITLE">
+        <h2>ALGIERS UNIVERSITY</h2>
+            <p>DÉPARTEMENT INFORMATIQUE</p>
+            <img src="../ImageHome/Frame 7.png" alt="">
+    </div>
+    </div>
+    
+
+<script src="./inscription.js"></script>
+</body>
+</html>

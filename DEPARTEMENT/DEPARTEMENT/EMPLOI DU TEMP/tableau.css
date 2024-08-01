@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main-tab{
+    margin: 35px;
+}
+.main-tab h3{
+    color: rgb(5, 38, 89);
+    margin-left: 30%;
+    margin-bottom: 40px;
+    letter-spacing:1px ;
+    word-spacing: 2px;
+}
+.logo{
+    margin: 20px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+
+}
+.logo .txt {
+    text-align: center ;
+    margin-left: 33%;
+    align-items: center;
+    letter-spacing:1px ;
+    word-spacing: 2px;
+    color: rgb(5, 38, 89);
+}
+/*.logo .txt h3{
+    color:  rgb(5, 38, 89)
+    
+}*/
+
+/*.logo img{
+    width: 120px;
+    margin-right: 20px;
+}*/
+.style-tab{
+    border: 1px solid ;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+}
+tr, td, th{
+    border: 1px solid rgb(5, 38, 89);
+    text-align: center;
+    padding: 5px;
+}
+th{
+    color: rgb(5, 38, 89);
+}
+table {
+    width: 100%;
+}
+  
+.table-top {
+    background-color: rgb(5, 38, 89);
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}

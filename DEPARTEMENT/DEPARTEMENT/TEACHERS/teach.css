@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+header {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 4px;
+
+        
+}
+
+.header-left {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.header-left .text1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-left .text1 h2 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: rgb(5, 38, 89);
+    margin: 0;
+}
+
+.header-left .text1 p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: rgb(2, 16, 36);
+    margin: 0;
+    margin-top: 3px;
+}
+
+.header-center {
+    width: 33.33%;
+    margin-top: 20px;
+
+
+}
+
+.header-center nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.header-center nav a {
+    text-decoration: none;
+    color: rgb(5, 38, 89);
+    font-size: 13px;
+    border-bottom: 4px solid transparent;
+    padding-bottom: 16px; 
+    font-weight: 500;
+ 
+}
+
+.header-center nav a:hover {
+    color: rgb(49, 170, 61);
+    border-bottom-color: rgb(49, 170, 61); 
+    border-radius:2.5px ;
+}
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-right .a {
+    text-decoration: none;
+    color: rgb(5, 38, 89);
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 20px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s, padding 0.3s; 
+}
+
+.header-right .a:hover {
+    background-color: rgb(230, 234, 239); 
+    padding: 10px 20px; 
+}
+
+.header-right .btn1 {
+    border: none;
+    border-radius: 0.5em;
+    padding: 10px 25px;
+    background-color: rgb(5, 38, 89);
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, padding 0.3s; 
+    text-decoration: none;
+    margin-right: 25px;
+    
+    
+}
+.header-center nav a.active {
+    color: rgb(49, 170, 61);
+    border-bottom-color: rgb(49, 170, 61);
+
+}
+
+
+ .main{
+    width: 100%;
+    height: 100%;
+    
+ }   
+ .main-top{
+    width: 100%;
+    height: 30%;
+}
+.caption .title{
+   padding: 56px; /*permet de définir l'espace entre le contenu d'un élément et ses bords intérieurs.*/
+}
+.caption .title h1{
+    font-size: 32px;/*contrôle la taille de la police*/
+    letter-spacing: 1px;/* contrôle l'espacement entre les caractères (lettres)*/
+    color: rgb(5, 38, 89);
+    margin: 0;
+    /*line-height: 48px;*/
+   /* font: weight 600px;*/
+}
+.caption .title p{
+    font-weight: 500px;
+    line-height: 24px;
+    color: #6F7287;
+    margin-top: 5px;/* l'espace entre la bordure supérieure d'un élément et l'élément qui le précède*/
+}
+.main-top-bottom{
+    width: 100%;
+    height:10% ;
+    display: flex;
+    justify-content: space-between;
+}    
+.liste{
+    position: relative;/* Définit la position de l'élément div comme relative */
+    padding-left: 56px;/*contrôle l'espace entre le bord gauche du contenu d'un élément et son bord gauche intérieur */
+    margin-bottom: 20px;/* l'espace entre le bas d'un élément et l'élément qui le suit */
+    line-height: 30px;/*contrôle la hauteur de ligne d'un élément de texte*/
+    top: -30px;
+}
+.liste .choix{
+    list-style: none;
+    display: flex;
+}
+.liste .choix li{
+    margin-right: 10px;
+}
+.liste .choix li span {
+    position: relative;
+    display: inline-block;/* Définit l'élément div comme un bloc en ligne */
+    background: white;
+    padding: 4px 20px;
+    color: #7DA0CA;
+    border-radius: 25PX;
+    font-size: 15px;
+    border: 1PX solid #7DA0CA;
+}
+.liste .choix .active span{
+    background:#052659 ;
+    color : #fff;
+    border: 1PX solid #052659;
+}
+.search {
+    position: relative;
+    margin-bottom: 20px;/* l'espace entre le bas d'un élément et l'élément qui le suit */
+    top: -40px;
+    margin-right: 50PX;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: 30px;
+    background: #fff;
+    border: 1px solid #7DA0CA;
+}
+.search .searchinput {
+    margin-left: 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: black;
+}
+.searchinput::placeholder{
+    color: #6F7287;
+}
+
+.flex {
+    height: 100%;
+  /*  width: 96%;*/
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 0;
+}
+.box {
+    width: 100%;
+    height: 100%;
+}
+.box-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9px;
+    border: 1px solid #F0F7FF;
+    box-shadow: 0px 0px 1px rgba(5,38,89);
+    color: #052659;
+    font-weight: 500;
+}
+.photo {
+    height: 100%;
+    padding: 0;
+}
+.f1, .f2, .f3, .f4, .f5 {
+    height: 100%;
+    padding: 0;
+}
+.b1,.b2,.b3,.b4,.b5{
+    display: inline-block;
+    margin-top:20px;
+    text-align: left;
+    background-color:#fff;
+    color:  #6F7287;
+    width: 100px;
+    height:30px;
+    font-weight: 500;
+}
+.b1{
+    margin-left: 20px;
+}
+.b2{
+    margin-left: 199px;
+}
+.b3{
+    margin-left: 110px;
+}
+.b4{
+    margin-left: 225px;
+}
+.b5{
+margin-left: 45px;
+}
+.photo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center items horizontally */
+    justify-content: center;/* Center text */
+}
+.photo .t1 {
+    margin-top: 10px; 
+}
+.flex .box :hover {
+    background-color: #052659;
+    color: #fff;
+    border-color: #052659;  
+}
+.box img {
+    width: 56px;
+    height: 56px;
+    margin-right: .5rem;
+    border-radius: 50%;
+   vertical-align: top;
+}
+
+
+.pagination{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cercle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #F0F2F4;
+    ;
+
+}
+.pagination-bar{
+    width: 20%;
+    height: 28px;
+    background-color: #F0F2F4;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.pagination-bar span{
+    font-size: 10px;
+    color: #53749F;
+    margin: 0;
+
+}
+.pagination-bar span:hover{
+    color: #052659;
+    cursor: pointer;
+}
+
+
+
+
+.pagination-bar .active {
+    background-color: #052659; /* Couleur du texte actif */
+    color: #fff; /* Couleur de fond pour le cercle actif */
+    border-radius: 50%; /* Assurer que le cercle actif est arrondi */
+    width: 25px; /* Ajuster la largeur pour obtenir un cercle */
+    height: 25px; /* Ajuster la hauteur pour obtenir un cercle */
+    display: flex; /* Pour centrer le numéro */
+    align-items: center; /* Pour centrer le numéro */
+    justify-content: center; /* Pour centrer le numéro */
+    margin-right: -10px; /* Ajustement négatif de la marge droite */
+    margin-left: -10px;
+   
+}
+.footer {
+    background-color: #021024;
+    width: 100%;
+    padding-top: 30px; /* Réduire la hauteur du padding-top */
+    padding-left: 40px; /* Réduire la largeur du padding-left */
+    padding-right: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content:space-between;
+   
+}
+
+.footer-maps {
+    width: 15%; /* Réduire la largeur de la section de la carte */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-maps p {
+    color: #BCC6CE;
+    font-size: 12px; /* Réduire la taille de la police */
+    margin-bottom: 10px; /* Réduire l'espacement en bas */
+    letter-spacing: 1px;
+}
+
+.footer-maps img {
+    margin-top: 5px; /* Réduire l'espace en haut */
+    width: 100%; /* Réduire la largeur de l'image */
+    height: auto; /* Garder les proportions */
+}
+
+.footer-maps button {
+    border-radius: 10px;
+    width: 20px;
+}
+
+.footer-maps-link {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 3px; /* Réduire le padding */
+    margin-top: 10px; /* Réduire l'espace en haut */
+}
+
+.footer-maps-link img {
+    width: 10px; /* Réduire la taille de l'image */
+    margin-right: 5px; /* Réduire l'espace à droite */
+    margin-left: 5px;
+}
+
+.footer-maps-link a {
+    font-size: 8px; /* Réduire la taille de la police */
+    color: #021024;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer-maps-link:hover{
+
+    background-color: #052659;
+}
+.footer-maps-link a:hover{
+    color: #fff;
+}
+.external-links{
+    width: 15%; /* Réduire la largeur de la section de la carte */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.external-links p ,.CONTACT p , .LANGAGE p{
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.TITLE{
+    display: flex;
+   align-items: center;
+  margin-top: 30px;
+   flex-direction: column;
+    
+}
+.TITLE h2{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.TITLE p{
+    color: #53749F;
+    letter-spacing: 2px;
+}
+.TITLE img{
+    width: 40px;
+   margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

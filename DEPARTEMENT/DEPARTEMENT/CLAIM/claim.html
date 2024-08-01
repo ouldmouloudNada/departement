@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departement Informatique</title>
+    <link rel="stylesheet" type="text/css" href="./claim.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="../ImageHome/logo.png" alt="">
+            <div class="text1">
+                <h2>ALGIERS UNIVERSITY</h2>
+                <p>DÉPARTEMENT INFORMATIQUE</p>
+            </div>
+            </div>
+            <div class="header-center" id="header-center">
+                <nav>
+                    <a href="../HOME/home.html"  >Home</a>
+                    <a href="../EMPLOI DU TEMP/emploi.html" >Schedules</a>
+                    <a href="../TEACHERS/teach.html">Teachers</a>
+                    <a href="../STUDENTS/students.html">Students</a>
+                    <a href="../ORIENTATION/orientation.html">Orientation</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <a href="../INSCRIPTION/inscription.html" class="a">Inscription</a>
+                <a href="./claim.html" class="btn1">Make a Claim</a>
+            </div>
+        </header>
+        
+
+
+        <div class="main">
+            <div class="main-top">
+<h3>Make a Claim</h3>
+<p>If you encounter any issues or have suggestions for improvement, please fill out the form below. Your feedback helps us enhance our services.</p>
+            </div>
+            <div class="main-bottom">
+        <div class="main-bottom-left">
+            <div class="main-bottom-left-top">
+                <div class="main-bottom-left-left">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" placeholder="Please enter your full name." id="fullName" required>
+                    <div id="fullNameError" class="error-message"></div> 
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Please provide a valid email address" id="email" required>
+                    <div id="emailError" class="error-message"></div>
+                </div>
+                <div class="main-bottom-left-right">
+                    <label for="studentID">Student/Staff ID</label>
+                    <input type="text" placeholder="Please enter your identification number" id="studentID" required>
+                    <div id="studentIDError" class="error-message"></div> 
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" placeholder="Please provide a valid phone number" id="phoneNumber" required>
+                    <div id="phoneNumberError" class="error-message"></div>
+                </div>
+            </div>
+            
+            <div class="main-bottom-left-bottom">
+                <label for="">Claim Type</label>
+                <select>
+                    <option value="" disabled selected hidden>Please select the type of claim from the options below</option>
+                    <option value="Academic Issue">Academic Issue</option>
+                    <option value="Facilities Issue">Facilities Issue</option>
+                    <option value="Administrative Issue">Administrative Issue</option>
+                    <option value="Other (Please Specify)">Other (Please Specify)</option>
+                </select>
+                <label for="">Claim Details</label>
+                <input type="text" name="" id="" placeholder="Please describe your claim in detail..." class="details" required>
+                <div class="button-container">
+                    <button type="button" onclick="validateForm()">Submit</button>
+                </div>
+            </div>
+            
+
+            </div>
+            
+            <div class="main-bottom-right">
+        <div class="outer-image">
+            <img src="./ImageClaim/Group (1).png" alt="Outer Image">
+            <div class="shadow-images">
+                <img src="./ImageClaim/shadow.svg" alt="">
+                <div class="inner-shadow-image">
+                    <img src="./ImageClaim/shadowG.svg" alt="" class="shadowG">
+                    <img src="./ImageClaim/shadowD.svg" alt="" class="shadowD" >
+                    <div class="inner-image">
+                        <img src="./ImageClaim/triangleG.svg" alt="" class="triangleG">
+                        <img src="./ImageClaim/triangleD.svg" alt="" class="triangleD">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            </div>
+        
+            </div>
+        </div>
+        <div class="validation-section" id="validation">
+            <div class="container">
+                <div class="container-top">
+                    <img src="./ImageClaim/Arrow - Left.svg" alt="" onclick="document.getElementById('validation').style.display='none'">
+                </div>
+                <div class="container-bottom">
+                    <img src="./ImageClaim/fluent_checkmark-circle-16-regular.svg" alt="">
+                    <button>Acadimic Issue</button>
+                    <p>Thank you for taking the time to provide feedback</p>
+                    <a href="../HOME/home.html">Home Page</a>
+                    
+                    
+                
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="footer">
+            <div class="footer-maps">
+                <p>OUR LOCATION</p>
+                <img src="../ImageHome/image-map.svg" alt="">
+                <div class="footer-maps-link">
+                <img src="../ImageHome/logos_google-maps.svg" alt="">
+                <a href="https://maps.app.goo.gl/iNEMEFYrm2NZWpqd7">View on google maps</a>
+                </div>
+            
+            </div>
+            <div class="external-links">
+                <p style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">External Links</p> 
+                <p>Université Alger 1</p> 
+                <p>MESRS</p> 
+                <p>ERASMUS + </p> 
+                <p>SNDL</p> 
+                <p>PRFU</p> 
+            </div>
+            <div class="CONTACT">
+                <p  style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">Contact</p>
+                <p >Adresse: 02 Rue Didouche Mourad, Alger</p> 
+                <p>Mail: contact@univ-alger.dz</p> 
+                <p>Tél: +213 (0) 21 63 77 65 </p> 
+                <p>Fax: +213 (0) 21 63 78 64</p> 
+            
+            </div>
+            <div class="LANGAGE">
+                <p style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">Language</p> 
+                <p>English</p> 
+                <p>Arabic</p> 
+                <p>French</p> 
+            
+            </div>
+            <div class="TITLE">
+                <h2>ALGIERS UNIVERSITY</h2>
+                    <p>DÉPARTEMENT INFORMATIQUE</p>
+                    <img src="../ImageHome/Frame 7.png" alt="">
+            </div>
+            </div>
+            
+        
+
+        <script src="./claim.js"></script>
+</body>
+</html>

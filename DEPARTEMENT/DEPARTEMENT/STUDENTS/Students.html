@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Departement Informatique</title>
+<link rel="stylesheet" href="./Students.css ">
+
+</head>
+<div>
+<header>
+    <div class="header-left">
+        <img src="./Logo.jpg">
+        <script src="Students.js"></script>
+        <div class="text1">
+            <h2>ALGIERS UNIVERSITY</h2>
+            <p>DÉPARTEMENT INFORMATIQUE</p>
+        </div>
+    </div>
+
+    <div class="header-center" id="header-center">
+        <nav>
+            <a href="../HOME/home.html">Home</a>
+            <a href="../EMPLOI DU TEMP/emploi.html">Schedules</a>
+            <a href="../TEACHERS/teach.html">Teachers</a>
+            <a href="./Students.html" class="active">Students</a>
+            <a href="../ORIENTATION/orientation.html">Orientation</a>
+        </nav>
+    </div>
+    <div class="header-right">
+        <a href="../INSCRIPTION/inscription.html" class="a">Inscription</a>
+        <a href="../CLAIM/claim.html" class="btn1">Make a Claim</a>
+    </div>
+
+</header>
+    <!-- Section pour afficher les listes d'étudiants -->
+        <div class="section">
+            <!-- Titre et année académique -->
+            <div class="caption">
+                <div class="title">
+                    <h1>Student Lists</h1>
+                    <p>Academic Year 2023/2024</p>
+                </div>
+            </div>  
+        </div>   
+<!-- Interface de filtrage et de recherche -->
+<div class="div2">
+    <!-- Niveaux d'études -->
+        <div class="level">
+            <!-- Boutons de filtrage par niveau d'études -->
+            <button class="active" onclick="toggleLevel('All')">All</button>
+            <button  onclick="toggleLevel('L1')">L1</button>
+            <button onclick="toggleLevel('L2')">L2</button>
+            <button onclick="toggleLevel('L3')">L3</button>
+            <button onclick="toggleLevel('M1')">M1</button>
+            <button onclick="toggleLevel('M2')">M2</button>
+            
+        </div>
+           <!-- Barre de recherche -->
+        <div class="search">
+            <!-- Icône de recherche -->
+            <ul class="search-container">
+                <!-- Champ de saisie de la recherche -->
+                <img src="search.svg" style="width: 10%; display: inline; cursor: pointer;" ></img>
+                <input type="text" id="searchInput" placeholder="Search..." style="border: none; width: 100%;" onkeydown="if(event.keyCode===13) searchFiles()">
+            </ul>
+        </div>
+    </div>
+    <!-- Section pour afficher les listes d'étudiants -->
+        <div class="Container">
+            <div class="List">
+                <!--La partie "top" contient une image--> 
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants L1 INF A </p>
+                </div>
+                <!--La partie "bas" contient deux boutons-->
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                     <!--la calsse de telechargement de la list etudaint -->
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg" alt="">
+                    </button>
+                </div>
+            
+            </div>
+
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants L1 INF B </p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg" alt="">
+                    </button>
+                </div>
+            
+            </div>
+
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants L2 INF A </p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg" alt="">
+                    </button>
+                </div>
+            
+            </div>
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants L2 INF A </p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg" alt="">
+                    </button>
+                </div>
+            
+            </div>
+
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants L2 ISIL </p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg " alt="">
+                    </button>
+                </div>
+            
+            </div>
+
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants L2 GTR  </p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg " alt="">
+                    </button>
+                </div>
+            
+            </div>
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants L3 INF A </p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src=" material-symbols_download (1).svg "  alt="">
+                    </button>
+                </div>
+            
+            </div>
+
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants L3 ISIL </p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg" alt="">
+                    </button>
+                </div>
+            
+            </div>
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants L3 GTR </p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg" alt="">
+                    </button>
+                </div>
+            
+            </div>
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants M1 ISIL </p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg" alt="">
+                    </button>
+                </div>
+            
+            </div>
+            <div class="List">
+                <div class="top" >
+                    <img src="XMLID_2268_.svg" alt="" height="30px">
+                    <p>List étudiants M2 GTR</p>
+                </div>
+                <div class="bas">
+                    <button>
+                        <img src="material-symbols_link.svg" alt="" >
+                    </button>
+                    <button class="telecharger">
+                        <img src="material-symbols_download (1).svg" alt="">
+                    </button>
+                </div>
+            
+            </div>
+            
+        
+
+        </div>            
+        <div class="footer">
+            <div class="footer-maps">
+                <p>OUR LOCATION</p>
+                <img src="../ImageHome/image-map.svg" alt="">
+                <div class="footer-maps-link">
+                <img src="../ImageHome/logos_google-maps.svg" alt="">
+                <a href="https://maps.app.goo.gl/iNEMEFYrm2NZWpqd7">View on google maps</a>
+                </div>
+            
+            </div>
+            <div class="external-links">
+                <p style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">External Links</p> 
+                <p>Université Alger 1</p> 
+                <p>MESRS</p> 
+                <p>ERASMUS + </p> 
+                <p>SNDL</p> 
+                <p>PRFU</p> 
+            </div>
+            <div class="CONTACT">
+                <p  style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">Contact</p>
+                <p >Adresse: 02 Rue Didouche Mourad, Alger</p> 
+                <p>Mail: contact@univ-alger.dz</p> 
+                <p>Tél: +213 (0) 21 63 77 65 </p> 
+                <p>Fax: +213 (0) 21 63 78 64</p> 
+            
+            </div>
+            <div class="LANGAGE">
+                <p style="color: #BCC6CE;font-size: 12px;  margin-bottom: 10px;letter-spacing: 1px;">Language</p> 
+                <p>English</p> 
+                <p>Arabic</p> 
+                <p>French</p> 
+            
+            </div>
+            <div class="TITLE">
+                <h2>ALGIERS UNIVERSITY</h2>
+                    <p>DÉPARTEMENT INFORMATIQUE</p>
+                    <img src="../ImageHome/Frame 7.png" alt="">
+            </div>
+            </div>
+            
+               
+</body>
+</html>
